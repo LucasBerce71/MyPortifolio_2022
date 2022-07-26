@@ -155,7 +155,7 @@ const Home = () => (
           Soccer, {' '}
           Football, {' '}
           <Link href="https://www.corinthians.com.br/" target="_blank">
-            Corinthians {' '}
+            Corinthians
           </Link>
           , Basketball, {' '}
           and a lot of code.
