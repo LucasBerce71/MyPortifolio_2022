@@ -13,7 +13,7 @@ import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="amembo">
+  <Layout title="GitSearch">
     <Container>
       <Title>
         GitSearch <Badge>2020</Badge>

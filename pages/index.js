@@ -127,6 +127,10 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2022</BioYear>
+          Graduated from the faculty of systems analysis and development at Universidade Paulista
+        </BioSection>
+        <BioSection>
+          <BioYear>2022</BioYear>
           Sênior Frontend Engineer at Iterative - Brasil;
         </BioSection>
         <BioSection>
@@ -151,9 +155,9 @@ const Home = () => (
           Soccer, {' '}
           Football, {' '}
           <Link href="https://www.corinthians.com.br/" target="_blank">
-            Corinthians, {' '}
+            Corinthians {' '}
           </Link>
-          Basketball, {' '}
+          , Basketball, {' '}
           and a lot of code.
         </Paragraph>
       </Section>
@@ -164,8 +168,8 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link 
-              href="https://github.com/LucasBerce71" 
+            <Link
+              href="https://github.com/LucasBerce71"
               target="_blank"
               style={{ textDecoration: 'none' }}
             >
@@ -179,8 +183,8 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link 
-              href="linkedin.com/in/lucas-bercê-de-jesus-bb228416a" 
+            <Link
+              href="linkedin.com/in/lucas-bercê-de-jesus-bb228416a"
               target="_blank"
               style={{ textDecoration: 'none' }}
             >
@@ -194,8 +198,8 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link 
-              href="https://codepen.io/lucasberce71" 
+            <Link
+              href="https://codepen.io/lucasberce71"
               target="_blank"
               style={{ textDecoration: 'none' }}
             >
@@ -210,7 +214,7 @@ const Home = () => (
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <SimpleGrid columns={[1, 2, 2]} gap={6} mt={2}>
           <GridItem
             href="https://www.github.com/LucasBerce71"
             title="My Github"
