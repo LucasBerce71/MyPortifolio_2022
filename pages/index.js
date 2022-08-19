@@ -141,10 +141,6 @@ const Home = () => (
           <BioYear>2022</BioYear>
           Sênior Frontend Engineer at AP INTERACTIVE - Brasil;
         </BioSection>
-        <BioSection>
-          <BioYear>2022</BioYear>
-          Sênior Frontend Engineer at Sport Clube Corinthians Paulista - Brasil;
-        </BioSection>
       </Section>
 
       <Section delay={0.3}>
