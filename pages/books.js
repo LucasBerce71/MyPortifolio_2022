@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo } from 'react';
 
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 
@@ -6,14 +6,6 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { GridItem } from '../components/grid-item';
 
-import CleanCode from "../public/images/books/cleanCode.jpg";
-import UseJsHead from "../public/images/books/useJsHead.webp";
-import JavaScriptPatterns from "../public/images/books/javascriptPatterns.jpg";
-import AndroidForProgrammers from "../public/images/books/androidForProgrammers.jpg";
-import CssRefactoring from "../public/images/books/cssRefactoring.jpg";
-import ReactNative from "../public/images/books/reactNativeBook.webp";
-import BuildingCareerInSoftware from "../public/images/books/buildingCareerInSoftware.jpeg";
-import CssGrid from "../public/images/books/cssGrid.jpg";
 import bookData from '../lib/mocks/bookData';
 
 const BookIRecomended = () => {
@@ -49,4 +41,4 @@ const BookIRecomended = () => {
   )
 }
 
-export default memo(BookIRecomended)
+export default memo(BookIRecomended);

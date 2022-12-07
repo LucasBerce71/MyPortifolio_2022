@@ -1,4 +1,9 @@
-import NextLink from 'next/link'
+import NextLink from 'next/link';
+import Image from 'next/image'
+
+import { IoLogoCodepen, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
+
+import { ChevronRightIcon } from '@chakra-ui/icons';
 import {
   Link,
   Container,
@@ -10,21 +15,20 @@ import {
   ListItem,
   useColorModeValue,
   chakra
-} from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
+} from '@chakra-ui/react';
+
+import { BioSection, BioYear } from '../components/bio';
 import { GridItem } from '../components/grid-item'
-import { IoLogoCodepen, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import thumbGithub from '../public/images/links/github.png'
-import thumbLinkedin from '../public/images/links/linkedin.png'
-import Image from 'next/image'
+import Paragraph from '../components/paragraph';
+import Layout from '../components/layouts/article';
+import Section from '../components/section';
+
+import thumbGithub from '../public/images/links/github.png';
+import thumbLinkedin from '../public/images/links/linkedin.png';
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
+});
 
 const Home = () => (
   <Layout>
@@ -115,15 +119,15 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
-          Júnior Frontend Engineer at ToiTech - Brasil;
+          Frontend Engineer at ToiTech - Brasil;
         </BioSection>
         <BioSection>
           <BioYear>2020</BioYear>
-          Júnior Frontend Engineer at AP INTERACTIVE - Brasil;
+          Frontend Engineer at AP INTERACTIVE - Brasil;
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>
-          Mid level Frontend Engineer at Topaz - Uruguay;
+          Frontend Engineer at Topaz - Uruguay;
         </BioSection>
         <BioSection>
           <BioYear>2022</BioYear>
@@ -131,19 +135,19 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2022</BioYear>
-          Sênior Frontend Engineer at Iterative - Brasil;
+          Frontend Engineer at Iterative - Brasil;
         </BioSection>
         <BioSection>
           <BioYear>2022</BioYear>
-          Sênior Frontend Engineer at ConectCar - Brasil;
+          Frontend Engineer at ConectCar - Brasil;
         </BioSection>
         <BioSection>
           <BioYear>2022</BioYear>
-          Sênior Frontend Engineer at AP INTERACTIVE - Brasil;
+          Frontend Engineer at Sport Clube Corinthians Paulista - Brasil;
         </BioSection>
         <BioSection>
           <BioYear>2022</BioYear>
-          Sênior Frontend Engineer at Sport Clube Corinthians Paulista - Brasil;
+          Frontend Engineer at AP INTERACTIVE - Brasil;
         </BioSection>
       </Section>
 
@@ -239,5 +243,6 @@ const Home = () => (
   </Layout>
 )
 
-export default Home
-export { getServerSideProps } from '../components/chakra'
+export default Home;
+
+export { getServerSideProps } from '../components/chakra';
