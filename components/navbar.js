@@ -83,7 +83,18 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/LucasBerce71/MyPortifolio2022"
+            href="https://my-code-space.vercel.app/"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            MyCodespace
+          </LinkItem>
+          <LinkItem
+            target="_blank"
+            href="https://github.com/LucasBerce71/MyPortifolio_2022"
             path={path}
             display="inline-flex"
             alignItems="center"
