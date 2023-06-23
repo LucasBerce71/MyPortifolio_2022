@@ -1,9 +1,5 @@
-import NextLink from 'next/link';
 import Image from 'next/image'
-
-import { IoLogoCodepen, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
-
-import { ChevronRightIcon } from '@chakra-ui/icons';
+import { IoLogoCodepen, IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5';
 import {
   Link,
   Container,
@@ -11,20 +7,14 @@ import {
   Box,
   SimpleGrid,
   Button,
-  List,
-  ListItem,
   useColorModeValue,
   chakra
 } from '@chakra-ui/react';
 
 import { BioSection, BioYear } from '../components/bio';
-import { GridItem } from '../components/grid-item'
 import Paragraph from '../components/paragraph';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
-
-import thumbGithub from '../public/images/links/github.png';
-import thumbLinkedin from '../public/images/links/linkedin.png';
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -49,9 +39,9 @@ const Home = () => (
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Lucas Bercê de Jesus
+            Lucas Bercê
           </Heading>
-          <p>Sênior Frontend engineer (HTML, CSS, JavaScript, TypeScript, React, Electron)</p>
+          <p>Frontend engineer (HTML, CSS, JavaScript, TypeScript, React).</p>
         </Box>
         <Box
           flexShrink={0}
@@ -70,11 +60,12 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/lucas.jpeg"
+              src="/images/l2.jpeg"
               alt="Profile image"
               borderRadius="full"
               width="100%"
               height="100%"
+              objectFit="cover"
             />
           </Box>
         </Box>
@@ -82,162 +73,122 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About my work
         </Heading>
         <Paragraph>
-          I&apos;ve been a frontend engineer for 5 years, with experience in web,
+          I&apos;ve been a frontend engineer for 6 years, with experience in web,
           mobile and desktop frontend development, working most of my career with JavaScript.{' '}
         </Paragraph>
-        <Box align="center" my={4}>
-          <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="blue">
-              My Projects
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          My main experiences
         </Heading>
-        <BioSection>
-          <BioYear>2002</BioYear>
-          Born in Osasco, Brasil.
-        </BioSection>
+
         <BioSection>
           <BioYear>2018</BioYear>
-          Beginning of the technical course in systems development (Technological Institute of Barueri);
+          Internship in systems development at CIT - Brasil;
         </BioSection>
-        <BioSection>
-          <BioYear>2018</BioYear>
-          Internship in systems development at CIT (Innovation and technology center) company - Brasil;
-        </BioSection>
-        <BioSection>
-          <BioYear>2019</BioYear>
-          Graduated in the technical course of systems development (Technological Institute of Barueri);
-        </BioSection>
+
         <BioSection>
           <BioYear>2019</BioYear>
           Frontend Engineer at ToiTech - Brasil;
         </BioSection>
+
         <BioSection>
           <BioYear>2020</BioYear>
           Frontend Engineer at AP INTERACTIVE - Brasil;
         </BioSection>
+
         <BioSection>
           <BioYear>2021</BioYear>
           Frontend Engineer at Topaz - Uruguay;
         </BioSection>
-        <BioSection>
-          <BioYear>2022</BioYear>
-          Graduated from the faculty of systems analysis and development at Universidade Paulista
-        </BioSection>
-        <BioSection>
-          <BioYear>2022</BioYear>
-          Frontend Engineer at Iterative - Brasil;
-        </BioSection>
+
         <BioSection>
           <BioYear>2022</BioYear>
           Frontend Engineer at ConectCar - Brasil;
         </BioSection>
+
         <BioSection>
           <BioYear>2022</BioYear>
-          Frontend Engineer at Sport Clube Corinthians Paulista - Brasil;
+          Frontend Engineer at Corinthians - Brasil;
         </BioSection>
+
         <BioSection>
           <BioYear>2022</BioYear>
           Frontend Engineer at AP INTERACTIVE - Brasil;
         </BioSection>
+
+        <BioSection>
+          <BioYear>2023</BioYear>
+          Frontend Engineer at NBA - United Stated;
+        </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          My Networks
         </Heading>
-        <Paragraph>
-          Soccer, {' '}
-          Football, {' '}
-          <Link href="https://www.corinthians.com.br/" target="_blank">
-            Corinthians
-          </Link>
-          , Basketball, {' '}
-          and a lot of code.
-        </Paragraph>
-      </Section>
 
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          On the web
-        </Heading>
-        <List>
-          <ListItem>
-            <Link
-              href="https://github.com/LucasBerce71"
-              target="_blank"
-              style={{ textDecoration: 'none' }}
+        <SimpleGrid columns={[1, 2]} mt={2}>
+          <Link
+            href="https://github.com/LucasBerce71"
+            target="_blank"
+            style={{ textDecoration: 'none' }}
+          >
+            <Button
+              variant="ghost"
+              colorScheme="blue"
+              leftIcon={<IoLogoGithub />}
             >
-              <Button
-                variant="ghost"
-                colorScheme="blue"
-                leftIcon={<IoLogoGithub />}
-              >
-                @LucasBerce71 in GitHub
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link
-              href="linkedin.com/in/lucas-bercê-de-jesus-bb228416a"
-              target="_blank"
-              style={{ textDecoration: 'none' }}
-            >
-              <Button
-                variant="ghost"
-                colorScheme="blue"
-                leftIcon={<IoLogoLinkedin />}
-              >
-                @lucasbercedejesus in Linkedin
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link
-              href="https://codepen.io/lucasberce71"
-              target="_blank"
-              style={{ textDecoration: 'none' }}
-            >
-              <Button
-                variant="ghost"
-                colorScheme="blue"
-                leftIcon={<IoLogoCodepen />}
-              >
-                @lucasberce71 in Codepen.io
-              </Button>
-            </Link>
-          </ListItem>
-        </List>
-
-        <SimpleGrid columns={[1, 2, 2]} gap={6} mt={2}>
-          <GridItem
-            href="https://www.github.com/LucasBerce71"
-            title="My Github"
-            thumbnail={thumbGithub}
-          />
-          <GridItem
-            href="https://linkedin.com/in/lucas-bercê-de-jesus-bb228416a"
-            title="My Linkedin"
-            thumbnail={thumbLinkedin}
-          />
-        </SimpleGrid>
-
-        <Box align="center" my={4}>
-          <NextLink href="/posts" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="blue">
-              Popular posts
+              GitHub
             </Button>
-          </NextLink>
-        </Box>
+          </Link>
+
+          <Link
+            href="linkedin.com/in/lucas-bercê-de-jesus-bb228416a"
+            target="_blank"
+            style={{ textDecoration: 'none' }}
+          >
+            <Button
+              variant="ghost"
+              colorScheme="blue"
+              leftIcon={<IoLogoLinkedin />}
+            >
+              Linkedin
+            </Button>
+          </Link>
+
+          <Link
+            href="https://codepen.io/lucasberce71"
+            target="_blank"
+            style={{ textDecoration: 'none' }}
+          >
+            <Button
+              variant="ghost"
+              colorScheme="blue"
+              leftIcon={<IoLogoCodepen />}
+            >
+              Codepen.io
+            </Button>
+          </Link>
+
+          <Link
+            href="https://twitter.com/LucasBerce71"
+            target="_blank"
+            style={{ textDecoration: 'none' }}
+          >
+            <Button
+              variant="ghost"
+              colorScheme="blue"
+              leftIcon={<IoLogoTwitter />}
+            >
+              Twiter
+            </Button>
+          </Link>
+        </SimpleGrid>
       </Section>
     </Container>
   </Layout>

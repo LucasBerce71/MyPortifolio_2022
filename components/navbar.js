@@ -72,11 +72,11 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Works
+          <LinkItem href="/" path={path}>
+            Home
           </LinkItem>
           <LinkItem href="/posts" path={path}>
-            Posts
+            Blog
           </LinkItem>
           <LinkItem href="/books" path={path}>
             Books recomended
@@ -91,18 +91,6 @@ const Navbar = props => {
             pl={2}
           >
             MyCodespace
-          </LinkItem>
-          <LinkItem
-            target="_blank"
-            href="https://github.com/LucasBerce71/MyPortifolio_2022"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            <IoLogoGithub />
-            Source
           </LinkItem>
         </Stack>
 
@@ -119,7 +107,7 @@ const Navbar = props => {
               />
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem as={Link}>Home</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
@@ -127,12 +115,6 @@ const Navbar = props => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
-                  View Source
-                </MenuItem>
               </MenuList>
             </Menu>
           </Box>
