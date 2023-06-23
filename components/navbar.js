@@ -75,7 +75,7 @@ const Navbar = props => {
           <LinkItem href="/" path={path}>
             Home
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          <LinkItem href="https://my-blog-puce-theta.vercel.app/" target="_blank" path={path}>
             Blog
           </LinkItem>
           <LinkItem href="/books" path={path}>
@@ -109,11 +109,14 @@ const Navbar = props => {
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>Home</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                <NextLink href="https://my-blog-puce-theta.vercel.app/" passHref>
+                  <MenuItem as={Link}>Blog</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
+                <NextLink href="/books" passHref>
+                  <MenuItem as={Link}>Books recomended</MenuItem>
+                </NextLink>
+                <NextLink href="https://my-code-space.vercel.app/" passHref>
+                  <MenuItem as={Link}>MyCodespace</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
